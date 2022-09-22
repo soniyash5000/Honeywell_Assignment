@@ -1,0 +1,66 @@
+.icon {
+    font-size: 1.8rem;
+    color: #31708f;
+}
+
+.save {
+    margin-right: 20px;
+}
+
+.close {
+    margin-right: 20px;
+}
+
+.back {
+    margin-left: 20px;
+}
+
+.navbar {
+    justify-content: center;
+    background: #d9edf7;
+    margin-bottom: 20px;
+}
+
+.navbarText {
+    color: #31708f;
+    justify-content: center;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.title{
+    color: #3d7eb8;
+}
+
+.span {
+    color: red;
+}
+
+.dates {
+    margin-bottom: 0.5rem;
+    color: #3d7eb8;
+}
+
+.cancel_btn {
+    float: right;
+    margin-top: 35px;
+}
+
+.submit_btn{
+    background-color: #337ab7;
+    margin-top: 35px;
+
+}
+
+
+.classic {
+    background-image: linear-gradient(45deg, transparent 50%, white 50%),
+        linear-gradient(135deg, white 50%, transparent 50%),
+        linear-gradient(to right, #337ab7, #337ab7);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat;
+}

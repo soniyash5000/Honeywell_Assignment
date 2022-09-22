@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intake Form</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div id="icon">
+                  
+                    <i class="fa fa-angle-left back" aria-hidden="true"></i>
+                </div>
+                <span class="navbar-brand mb-0 h1 navbarText"
+                    >New Task</span
+                >
+                <div class="d-flex icon">
+                    <i class="fa fa-floppy-o save" aria-hidden="true"></i>
+                    <i class="fa fa-times close" aria-hidden="true"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form>
+                <div class="row g-3 " >
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Project Type<span class="span">*</span></label
+                        >
+                        <select
+                            class="form-select classic" required
+                        >
+                            <option selected>Select Project Type</option>
+                            <option value="1">Frontend</option>
+                            <option value="2">Backend</option>
+                            <option value="3">AIML</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Project Name<span class="span">*</span></label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Project Name"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Task Name<span class="span">*</span></label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Task name"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6 col-xs-12">
+                        <label
+                            class="form-label title"
+                            >Task Description</label
+                        >
+                        <div class="form-floating">
+                            <textarea
+                                class="form-control"
+                                placeholder="Leave a comment here"
+                                style="height: 100px"
+                            ></textarea>
+                            <label 
+                                >Task Description</label
+                            >
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Assignor<span class="span">*</span></label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Assignor"
+                            required
+                        />
+                    </div>
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Assignee<span class="span">*</span></label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Assignee"
+                            required
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="row g-3">
+                        <div class="col-lg-3  col-md-6 col-sm-12">
+                            <label class="dates" 
+                                >Received Date <span class="span">*</span></label
+                            >
+                            <input
+                                class="form-control"
+                                type="date"
+                                required
+                            />
+                        </div>
+                        <div class="col-lg-3  col-md-6 col-sm-12">
+                            <label  class="dates"
+                                >Assigned Date<span class="span">*</span></label
+                            >
+                            <input 
+                                class="form-control try"
+                                type="date"
+                                required
+                            />
+                        </div>
+                        <div class="col-lg-3  col-md-6 col-sm-12">
+                            <label class= "dates"
+                                >Planned Delivery Date<span class="span">*</span></label
+                            >
+                            <input
+                                class="form-control"
+                                type="date"
+                                required
+                            />
+                        </div>
+                        <div class="col-lg-3  col-md-6 col-sm-12">
+                            <label for="startDate" class="form-label title" 
+                                >Estimated effort hours<span class="span">*</span></label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Estimated effort hours"
+                                required
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3" >
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Status<span class="span">*</span></label
+                        >
+                        <select
+                            class="form-select classic"
+                            required 
+                        >
+                            <option selected>In Progress</option>
+                            <option value="1">Completed</option>
+                            <option value="2">On hold</option>
+                            <option value="3">Waiting for review</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3  col-md-6 col-sm-12">
+                        <label
+                            class="form-label title"
+                            >Repository</label
+                        >
+                        <div class="form-floating">
+                            <textarea
+                                class="form-control"
+                                placeholder="Repository"
+                                style="height: 100px"
+                            ></textarea>
+                            <label > Repository</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6 col-xs-12">
+                        <label
+                            class="form-label title"
+                            id="title"
+                            >Comments</label
+                        >
+                        <div class="form-floating">
+                            <textarea
+                                class="form-control"
+                                placeholder="Comments"
+                                style="height: 100px"
+                            ></textarea>
+                            <label > Comments</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <button
+                            type="button"
+                            class="btn btn-danger cancel_btn"
+                        >
+                            Cancel
+                        </button>
+                    </div>
+                    <div class="col-6 ">
+                        <button type="button" class="btn btn-primary submit_btn">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
